@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background: linear-gradient(120deg, #190eb7, #190eb7);
+    color: #fff;
+    padding: 10rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links .btn {
+    background-color: #23dc70;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 1.5rem 0;
+}
+
+.features {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.feature {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    margin-top: 0;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.testimonial-content {
+    max-width: 50rem;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+/* Container for the features */
+.feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature {
+    flex: 1 1 calc(25% - 20px); /* Adjust for desired column number */
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center; /* Optional, for centering content */
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures the image fits the container */
+    margin: 0 auto; /* Centers the image if the container is smaller */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .feature {
+        flex: 1 1 calc(50% - 20px); /* Adjust for two columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .feature {
+        flex: 1 1 100%; /* Full-width for small screens */
+    }
+}
+

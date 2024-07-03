@@ -1,0 +1,11 @@
+table, th, td {
+    border: 1px solid red;
+    border-collapse: collapse;
+}
+.right{
+    text-align: right;
+}
+tr:nth-child(2)
+{
+    background: blue;
+}

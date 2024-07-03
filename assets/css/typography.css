@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.text p::first-line{
+    color:brown;
+
+}
+.text p::first-letter{
+    font-size:1.8rem ;
+}
+.text p{
+    column-count: 4;
+    text-align: justify;
+    gap: 50px;
+    column-rule: solid red 2rem;
+    /* text-transform: uppercase; */
+    text-transform: capitalize;
+    text-decoration: overline;
+    font-family:  "Ubuntu", sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight:bold;
+    line-height:2;
+}
+.style{
+    font-family: "Pacifico", cursive;
+
+}
+.fa-home{
+    color: rgb(54, 9, 234);
+    font-size: xx-large;
+}

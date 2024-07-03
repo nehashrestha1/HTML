@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+<link rel="stylesheet" href="./assets/css/regform.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Admission Form</h2>
+        <div class="admission admission-form"></div>
+        <form name="myform" onsubmit="return formvalidation()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" >
+             <p id="nmessageError"></p>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+            <p id="amessageError"></p>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" >
+            <p id="pmessageError"></p>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <p id="emessageError"></p>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <p id="passmessageError"></p>
+            
+            <label for="confirmpassword">Confirm Password:</label>
+            <input type="password" id="confirmpassword" name="confirmpassword">
+            <p id="cpmessageError"></p>
+
+            <!-- <div class="form-group">
+                <label for="role">Role:</label>
+                <div class="radio-group">
+                    <input type="radio" id="farmer" name="role" value="farmer" >
+                    <label for="farmer">Farmer</label>
+                    <input type="radio" id="customer" name="role" value="customer" >
+                    <label for="customer">Customer</label>
+                </div>
+            </div> -->
+            <input type="submit" value="submit">
+        </form>
+    </div>
+    <script src="./assets/js/min1.js"></script>
+</body>
+</html>

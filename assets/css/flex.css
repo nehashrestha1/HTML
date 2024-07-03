@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+.flex-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    /* justify-content: space-evenly; */
+}
+
+
+
+.flex-item{
+   background-color: #16e4cc;
+   padding: 1rem;
+   flex: 1 1 175px;
+   max-width: 200px;
+   /* margin: auto; */
+   text-align: center;
+   
+}
+@media(max-width:768px)  {
+    .flex-container{
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+}
+
